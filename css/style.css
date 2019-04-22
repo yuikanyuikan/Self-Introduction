@@ -1,0 +1,148 @@
+h1{
+    background-color:skyblue;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    background-color:rgba(19, 255, 125,0.3); 
+    height: 100%;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.introduction h2{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.introduction span, .contact-form h2{
+    color: darkorange;
+    font-size: 25px;
+}
+
+.introduction img{
+    height:40px;
+}
+
+strong{
+    color: hotpink;
+    font-size: 30px;
+}
+
+
+ul{
+    list-style: none;
+}
+.pics p{
+    font-size:30px;
+    color:blueviolet;
+}
+
+.pics img{
+    height:300px;
+    width:300px;
+    margin:40px;
+    border: 1px solid palevioletred;
+}
+
+.radius{
+    border-radius: 50px;
+}
+.contact-form input,textarea{
+    width:400px;
+    margin:30px 0;
+    font-size:18px;
+    border:1px solid #04ebdf;
+}
+
+
+.contact-form{
+    background-color:rgba(52,214, 52,.5);
+    padding:20px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-submit:hover{
+    background-color: lightseagreen;
+    transition: all 3s;
+}
+
+.explore img:nth-child(3){
+    border-radius: 50px;
+    animation: fadeIn 3s ease;
+}
+
+.party img:nth-child(3){
+    border-radius: 50px;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity:0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:480px){
+    .main{
+        background-color: dodgerblue;
+        width: 100%;
+    }
+
+    .pics p{
+        color: violet;
+        font-size: 35px;
+    }
+    .pics img{
+        border: 5px solid aquamarine;
+    }
+    h1{ 
+        background-color:palevioletred;
+        height:80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .explore img:nth-child(3){
+        border-radius: 50%;
+    }
+    
+    .party img:nth-child(3){
+        border-radius: 50%;
+    }
+
+    .contact-form{
+        background-color:plum;
+        padding:20px;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-submit:hover{
+        background-color: purple;
+        transition: all 3s;
+    }
+}
